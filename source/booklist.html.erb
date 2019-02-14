@@ -1,0 +1,103 @@
+---
+title: Vibgyor Library - Book List
+---
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/booklist.css">
+<div class="limiter">
+    <div class="s003">
+        <div>
+            <div class="inner-form">
+                <div id="category" class="input-field first-wrap">
+                    <div class="input-select">
+                        <select data-trigger="" name="choices-single-defaul">
+                            <option placeholder="">Category</option>
+                            <option value="1">01 - Self Help</option>
+                            <option value="2">02 - Biography</option>
+                            <option value="3">03 - Children's</option>
+                            <option value="4">04 - Novel</option>
+                            <option value="5">05 - Fitness</option>
+                            <option value="6">06 - Science Non-fiction</option>
+                            <option value="7">07 - Travalogue</option>
+                            <option value="8">08 - History</option>
+                            <option value="9">09 - Other Non-fiction</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="language" class="input-field first-wrap">
+                        <div class="input-select">
+                            <select data-trigger="" name="choices-single-defaul">
+                                <option placeholder="">Language</option>
+                                <option value="M">Marathi</option>
+                                <option value="E">English</option>
+                            </select>
+                        </div>
+                    </div>
+                <div class="input-field second-wrap">
+                <input id="search" type="text" placeholder="Author, Book Name...?" />
+                </div>
+                <div class="input-field third-wrap">
+                <button class="btn-search" type="button">
+                    <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="note">Click the button or hit enter.</div>
+    <div class="container-table100">
+        <div class="wrap-table100">
+            <div class="table100 ver1">
+                <div class="table100-head">
+                    <table>
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="cell100 column1">Book No</th>
+                                <th class="cell100 column2">Name</th>
+                                <th class="cell100 column3">Author</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <div class="table100-body js-pscroll">
+                    <table>
+                        <tbody>
+                            <tr><td class="loading-spinner"></td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.0/fuse.min.js"></script>
+<script src="javascripts/popper.min.js"></script>
+<script src="javascripts/select2.min.js"></script>
+<script src="javascripts/perfect-scrollbar.min.js"></script>
+<script src="javascripts/choices.js"></script>
+<script>
+    $('.js-pscroll').each(function(){
+        var ps = new PerfectScrollbar(this);
+
+        $(window).on('resize', function(){
+            ps.update();
+        })
+    });
+</script>
+<script>
+    const choices = new Choices('[data-trigger]',
+    {
+        searchEnabled: false,
+        itemSelectText: '',
+    });
+</script>
+<script src="js/main.js"></script>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->

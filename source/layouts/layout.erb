@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Use the title from a page's frontmatter if it has one -->
+	<title>
+		<%= current_page.data.title || "Middleman" %>
+	</title>
+	<%= javascript_include_tag "jquery" %>
+	<%= stylesheet_link_tag "site" %>
+	<%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Noto+Serif+SC" %>
+	<%= stylesheet_link_tag "bootstrap" %>
+	<%= stylesheet_link_tag "bootstrap-grid" %>
+	<%= stylesheet_link_tag "bootstrap-reboot" %>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134237675-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-134237675-1');
+	</script>
+	<script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
+
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">
+			<%= image_tag "/images/vibgyor_aws.jpg" %>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<ul class="navbar-nav col-xs-12 col-lg-10">
+				<li>
+					<%= link_to 'Home', '/index.html', :id => "home", :class => "nav-item nav-link" %>
+				</li>
+				<li>
+					<%= link_to 'Events', '/events.html', :id => "events", :class => "nav-item nav-link" %>
+				</li>
+				<li>
+					<%= link_to 'Testimonials', '/testimonials.html', :id => "testimonials", :class => "nav-item nav-link" %>
+				</li>
+				<li>
+					<%= link_to 'Library', '/booklist.html', :id => "library", :class => "nav-item nav-link" %>
+				</li>
+				<li>
+					<%= link_to 'Gallery', '/gallery.html', :id => "gallery", :class => "nav-item nav-link" %>
+				</li>
+				<li>
+					<%= link_to 'About Us', '/aboutus.html', :id => "aboutus", :class => "nav-item nav-link" %>
+				</li>
+				<li>
+					<%= link_to 'Contact Us', '/contactus.html', :id => "contactus", :class => "nav-item nav-link" %>
+				</li>
+			</ul>
+			<ul class="navbar-nav col-xs-12 col-lg-2">
+				<li><a class="sm-icom" href="https://www.facebook.com/vibgyor.library/"><img class="social-icon" src="images/facebook.png" alt="fb-icon"></a></li>
+				<li><a class="sm-icom" href="https://www.instagram.com/vibgyor_org/"><img class="social-icon" src="images/instagram.png" alt="insta-icon"></a></li>
+			</ul>
+		</div>
+	</nav>
+	<%= yield %>
+	<section id="footer" class="bg-dark">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div id="map" class="col-xs-12 col-sm-12 col-md-4">
+					<h5 class="text-xs-center text-sm-center text-md-left">Where are we?</h5>
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=vibgyor%20library&t=&z=15&ie=UTF8&iwloc=&output=embed"
+							 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+						</div>
+					</div>
+				</div>
+				<div id="links" class="col-xs-12 col-sm-12 col-md-4">
+					<h5 class="text-xs-center text-sm-center text-md-left">Go To</h5>
+					<ul class="go-to-links text-xs-center text-sm-center text-md-left">
+						<li>
+							<%= link_to 'Home', '/index.html' %>
+						</li>
+						<li>
+							<%= link_to 'Events', '/events.html' %>
+						</li>
+						<li>
+							<%= link_to 'Testimonials', '/testimonials.html' %>
+						</li>
+						<li>
+							<%= link_to 'Library', '/booklist.html' %>
+						</li>
+						<li>
+							<%= link_to 'Gallery', '/gallery.html' %>
+						</li>
+						<li>
+							<%= link_to 'About Us', '/aboutus.html' %>
+						</li>
+						<li>
+							<%= link_to 'Contact Us', '/contactus.html' %>
+						</li>
+					</ul>
+				</div>
+				<div id="contact" class="col-xs-12 col-sm-12 col-md-4">
+					<h5 class="text-xs-center text-sm-center text-md-left">Contact Us</h5>
+					<div class="container text-xs-center text-sm-center text-md-left">
+						<div class="wrapper">
+							<span class="fa-icon"><i class="fas fa-map-marked-alt"></i></span>
+							<div id="address">27 c/o, Pranali Classes, Lokdhara Shopping Complex, Lokdhara, Kalyan East, 421306.</div>
+						</div>
+						<div class="wrapper">
+							<span class="fa-icon"><i class="fas fa-envelope"></i></span>
+							<div id="email">vibgyor.org@gmail.com</div>
+						</div>
+						<div id="social">
+							<a href="https://www.facebook.com/vibgyor.library/"><img src="images/facebook.svg" alt="fb-icon"></a>
+							<a href="https://www.instagram.com/vibgyor_org/"><img src="images/instagram.svg" alt="insta-icon"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row disclaimer-text">This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.</div>
+		</div>
+	</section>
+	<%= javascript_include_tag "bootstrap" %>
+	<%= javascript_include_tag "bootstrap.bundle" %>
+	<%= javascript_include_tag "https://use.fontawesome.com/releases/v5.6.3/js/all.js" %>
+	<%= javascript_include_tag "site" %>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+---
+title: Contact Us
+---
+<div id="contact-page">
+    <div id="contact-header" class="row">
+        <div class="col">
+            <h3>Contact Us</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="row">
+                    <h4>Here we are!</h4>
+                </div>
+                <div id="map" class="row">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe id="gmap_canvas" 
+                                src="https://maps.google.com/maps?q=vibgyor%20library&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>27 c/o Pranali Classesn Near Anand Global School, Lokdhara Phase 2, Kalyan East - 421306</p>
+                </div>
+                <div class="row">
+                    <h3>vibgyor.org@gmail.com</h3>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="row">
+                    <h4>Say Something!</h4>
+                </div>
+                <div class="row">
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div class="row">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="row">
+                    <textarea type="text" placeholder="Say Something" rows="6"></textarea>
+                </div>
+                <div class="row">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".navbar-nav .nav-link").removeClass("active"); 
+        $('.navbar-nav #contactus.nav-link').addClass('active');
+    });
+</script>
