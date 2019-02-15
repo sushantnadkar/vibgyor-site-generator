@@ -109,10 +109,9 @@ section#footer {
       padding: 0em;
       .wrapper {
         overflow: hidden;
-        .fa-icon {
+        img {
           float: left;
-          font-size: 2em;
-          color: #fff;
+          width: 3em;
         }
         #address {
           float: left;
@@ -126,7 +125,7 @@ section#footer {
           width: 75%;
           color: #fff;
           padding: 0em 0em 0em 1em;
-          margin: 0em; 
+          margin: 0.6em 0em; 
         }
       }
       #social {
@@ -277,11 +276,23 @@ section#footer {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
     background: rgba(0, 0, 0, .5);
     img {
-      height: 100%;
-      width: 100%;
+      height: 15%;
+      width: 45%;
+      align-self: center;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .image-container {
+    .image-overlay {
+      img {
+        height: 10%;
+        width: 80%;
+      }
     }
   }
 }
