@@ -7374,6 +7374,36 @@
           "author": "Amish"
         },
         {
+          "bookno": "E4-173",
+          "bookname": "The Day Trader",
+          "author": "Stephen Fry"
+        },
+        {
+          "bookno": "E4-174",
+          "bookname": "Half Girlfriend",
+          "author": "Chetan Bhagt"
+        },
+        {
+          "bookno": "E4-175",
+          "bookname": "Corporate Cartoons",
+          "author": "Prriya Raj"
+        },
+        {
+          "bookno": "E4-176",
+          "bookname": "Joke Book 3",
+          "author": "Khushwant Singh"
+        },
+        {
+          "bookno": "E4-177",
+          "bookname": "Joke Book 4",
+          "author": "Khushwant Singh"
+        },
+        {
+          "bookno": "E4-178",
+          "bookname": "The End of Innocence",
+          "author": "Moni Mohsin"
+        },
+        {
           "bookno": "E5-001",
           "bookname": "Eat. Delete",
           "author": "Pooja Makhija"
